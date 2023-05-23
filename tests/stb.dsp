@@ -42,7 +42,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /YX /FD /c
-# ADD CPP /nologo /G6 /MT /W3 /GX /Z7 /O2 /Ob2 /I ".." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "TT_TEST" /FD /c
+# ADD CPP /nologo /G6 /MT /W3 /GX /Z7 /O2 /Ob2 /I ".." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "VORBIS_TEST" /FD /c
 # ADD BASE RSC /l 0x409 /d "NDEBUG"
 # ADD RSC /l 0x409 /d "NDEBUG"
 BSC32=bscmake.exe
@@ -66,7 +66,7 @@ LINK32=link.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /YX /FD /GZ /c
-# ADD CPP /nologo /MTd /W3 /GX /Zi /Od /I ".." /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "VORBIS_TEST" /FR /FD /GZ /c
+# ADD CPP /nologo /MTd /W3 /GX /Zi /Od /I ".." /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "TT_TEST" /FR /FD /GZ /c
 # SUBTRACT CPP /YX
 # ADD BASE RSC /l 0x409 /d "_DEBUG"
 # ADD RSC /l 0x409 /d "_DEBUG"
@@ -86,6 +86,10 @@ LINK32=link.exe
 # Name "stb - Win32 Debug"
 # Begin Source File
 
+SOURCE=.\grid_reachability.c
+# End Source File
+# Begin Source File
+
 SOURCE=.\stb.c
 # End Source File
 # Begin Source File
@@ -98,7 +102,15 @@ SOURCE=..\stb_c_lexer.h
 # End Source File
 # Begin Source File
 
+SOURCE=..\stb_connected_components.h
+# End Source File
+# Begin Source File
+
 SOURCE=..\stb_divide.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\stb_ds.h
 # End Source File
 # Begin Source File
 
@@ -126,7 +138,15 @@ SOURCE=..\stb_image_write.h
 # End Source File
 # Begin Source File
 
+SOURCE=..\stb_include.h
+# End Source File
+# Begin Source File
+
 SOURCE=..\stb_leakcheck.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\stb_malloc.h
 # End Source File
 # Begin Source File
 
@@ -135,6 +155,14 @@ SOURCE=..\stb_perlin.h
 # Begin Source File
 
 SOURCE=..\stb_rect_pack.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\stb_sprintf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\stb_static.c
 # End Source File
 # Begin Source File
 
@@ -158,15 +186,43 @@ SOURCE=..\stb_voxel_render.h
 # End Source File
 # Begin Source File
 
-SOURCE=..\stretchy_buffer.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\stretchy_buffer_test.c
-# End Source File
-# Begin Source File
-
 SOURCE=.\test_c_compilation.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_c_lexer.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_ds.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_dxt.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_easyfont.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_image.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_image_write.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_packer.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_perlin.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_sprintf.c
 # End Source File
 # Begin Source File
 
@@ -175,6 +231,10 @@ SOURCE=.\test_truetype.c
 # Begin Source File
 
 SOURCE=.\test_vorbis.c
+# End Source File
+# Begin Source File
+
+SOURCE=.\test_voxel.c
 # End Source File
 # Begin Source File
 

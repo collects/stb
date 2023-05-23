@@ -72,11 +72,12 @@ causes worries for lawyers, even if their programmers
 aren't modifying it.
 
 Any license which requires crediting in documentation
-adds friction which can add up. Valve used to have
-a page with a list of all of these on their web site,
-and it was insane, and obviously nobody ever looked
-at it so why would you care whether your credit appeared
-there?
+adds friction which can add up. Valve has a huge list
+(http://nothings.org/remote/ThirdPartyLegalNotices_steam_2019.html)
+of all of these included in each game they ship,
+and it's insane, and obviously nobody ever looks
+at it so why would you care whether your credit
+appeared there?
 
 Permissive licenses like zlib and BSD license are
 perfectly reasonable, but they are very wordy and
@@ -95,9 +96,9 @@ public domain declarations aren't necessary recognized
 in the USA and some other locations. For that reason,
 I recommend a declaration along these lines:
 
-// This software is in the public domain. Where that dedication is not
-// recognized, you are granted a perpetual, irrevocable license to copy
-// and modify this file as you see fit.
+// This software is dual-licensed to the public domain and under the following
+// license: you are granted a perpetual, irrevocable license to copy, modify,
+// publish, and distribute this file as you see fit.
 
 I typically place this declaration at the end of the initial
 comment block of the file and just say 'public domain'
